@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Language -->
+<head>
+<!-- Noi dung tim kiem -->
+	<meta name="author" content="Dung Lai"/>
+	<meta name="description" content="My resume website"/>
+	<meta name="country" content="Vietnam"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>MY WEBSITE</title>
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link rel="stylesheet" href="./codeMessage/message.css">
+	<link rel="stylesheet" href="./formLogin/formLogin.css">
+	<link rel="stylesheet" href="./backStory/backStory.css">
+	<link rel="stylesheet" href="./gallery/gallery.css">
+</head>
+<body>
+<!-- ---------------------------------Login--------------------------------- -->
+	<div class="Login__container hidden">
+		<div class="Login__wrapper">
+			<form action="../web.html" id="formLogin">
+				<div class="Login__wrapper--title">
+					<p>Login</p>
+					<i id="btn_closeLogIn" class="fa-solid fa-x"></i>
+				</div>
+				<div class="mainLogIn">
+					<div class="Login__input_box">
+						<input id="Login__user" type="text" placeholder="Username" required>
+						<i class="fa-solid fa-user"></i>
+					</div>
+		
+					<div class="Login__input_box">
+						<input id="Login__password" type="password" placeholder="Password" required>
+						<i class="fa-solid fa-lock"></i>
+					</div>
+		
+					<div class="remember_fogot">
+						<label><input type="checkbox">Remember me</label>
+						<a id="fogot__password" class="updateInSoonLogIn">Forgot password?</a>
+					</div>
+		
+					<button type="submit" class="btn_formLogin">Login</button>
+					<div class="register_link">
+						<p>Don't have an account?<a class="updateInSoonLogIn">Register</a></p>
+					</div>
+				</div>
+			</form>
+		</div>
+	   </div>
+<!-- -------------------------------------story--------------------------------- -->
+<div class="backStory__interacted hidden"></div>
+<div class="backStory__container hidden">
+	<div class="backStory__title">
+	<h2>Take care of each other</h2>
+	<i id="btn_closeLogIn" class="fa-solid fa-x"></i>
+
+	</div>
+	<div class="backStory__content">
+		<p>
+			The United States Navy SEALs are perhaps the most elite warriors in the world.
+			And one of the seals was asked “who makes it through the selection process?” “Who is able to become a SEAl”. And his answer was “I can't tell you the kind of person that becomes a SEAl. I can't tell you the kind of person that makes it through BUDs. But I can tell you the kind of people who don't become SEALs”.
+		</p><br>
+		<p>
+			He says the guys that show up with huge bulging muscles covered in tattoos who want to prove to the world how tough they are. None of them make it through. He said the preening leaders who like to delegate all their responsibility and never do anything themselves, none of them make it through.He said the star college, athletes who've never really been tested to the core of their being. None of them make it through. 
+		</p><br>
+		<p>
+			He says some of the guys that make it through are skinny and scrawny. He said some of the guys that make it through you will see them shivering out of fear. He says “However all the guys that make it through when they find themselves physically spent emotionally spent when they have  nothing left to give physically or emotionally somehow someway, they are able to find the energy to dig down deep inside themselves to find the energy to help the guy next to them. They become SEALs he said.
+		</p><br>
+		<p>
+			You want to be an elite warrior? It's not about how tough you are, it's not about how smart you are, it's not about how fast you are. If you want to be an elite warrior you better get really really good at helping the person to the left of you and helping the person to the right of you. Because that's how people advance in the world. The world is too dangerous and the world is too difficult for you to think that you can do these things alone. 
+		</p><br>
+		<p>
+			If you find your spark I commend you: Now who you gonna ask for help and when are you gonna accept help when it's offered? Learn that skill. Learn by practicing helping each other. It'll be the single most valuable thing you ever learn in your entire life to accept help when it's offered and to ask for it when you know that you can't do it.
+		</p><br>
+		<p>
+			The amazing thing is when you learn to ask for help, you'll discover that there are people all around you who've always wanted to help you. They just didn't think you needed it because you kept pretending that you had everything under control. And the minute you say: I don't know what I'm doing. I'm stuck. I'm scared. I don't think i can do this. You will find that lots of people who love you will rush in and take care of you. But that will only happen if you learn to take care of them first.
+		</p>
+	</div>
+</div>
+	<!-- Menu navigation -->
+	<ul class="navbar">
+		<div>
+			<li class="navbar_item" ><a class="navbar_item_a"><i class='bx bx-home-alt'></i>Home</a></li>
+
+		<li class="navbar_item">
+			<a href="#" class="navbar_item_a">Languages<i class='bx bx-chevron-down'></i></a>
+			<ul class="dropdown">
+			<li><a href="#">HTML</a></li>
+			<li><a href="#">CSS</a></li>
+			<li><a href="#">JavaScript</a></li>
+			<li><a href="#">PHP</a></li>
+			</ul>
+		</li>
+		</div>
+		<div>
+			<li class="navbar_item">
+				<a href="#" class="navbar_item_a">About Us<i class='bx bx-chevron-down'></i></a>
+				<ul class="dropdown">
+					<li><a href="#">History</a></li>
+					<li><a href="#">Mission</a></li>
+					<li id="backStoryButton"><a>Backstory</a></li>
+				</ul>
+			</li>
+			<li class="navbar_item">
+				<a href="#" class="navbar_item_a">Contact Us<i class='bx bx-chevron-down'></i></a>
+				<ul class="dropdown">
+					<li id="PhoneNumberNow"><a>Hotline</a></li>
+					<li id="EmailMeNow"><a>Email me</a></li>
+					<li class="updateInSoon"><a>Branch</a></li>
+					<li class="updateInSoon"><a>Assistant</a></li>
+				</ul>
+			</li>
+			<li class="navbar_item"><a class="navbar_item_a" action="onclick" id="login">Sign in</a></li>
+		</div>
+
+	</ul>
+	<div id="toast"></div>
+<!-- ----------------------------imgClasss---------------------------------- -->
+	<h1 id="menu_text" class="menu_text">
+		<button>LỚP 12A3 2022-2023</button>
+		<div class="textBarWhite">
+			<h3>COMPUTER SCIENCE</h3>
+			<div class="textBarBlue"></div>
+		</div>
+		
+	</h1>
+
+
+<!-- Container -->
+	<div id="flex_container">
+		<div id="left_side">
+		 
+		<h1 id="contact" >About me</h1>
+<!-- ------------v----------------Card-------------v------------------ -->
+		<div class="card">
+			<div class="card__img">
+				<img src="./itMe.jpg" alt="">
+			</div> 
+			<h2 class="card__title">Hao Tran</h2>
+			<p>Web developer</p>
+			<div class="card__social">
+				<a href="https://www.facebook.com/profile.php?id=100026709853469">
+					<i class="fa-brands fa-facebook"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+				<a href="">
+					<i class="fa-brands fa-tiktok"></i>
+				</a>
+				<a href="https://github.com/daituongvohinh/daituongvohinh.github.io">
+					<i class="fa-brands fa-github"></i>
+				</a>
+	
+			</div>
+			<button><a href="#contactInformation">Contact Me</a></button>
+		</div>
+<!-- ---------------------------^^^^^^^^^-------------------------- -->
+		<h2 id="score">Score</h2>
+		<table>
+			<tr>
+				<th rowspan="2"></th>
+				 <th colspan="2">Math</th> 
+				 <!-- colspan="n" chia cot hien tai thanh n cot -->
+				 <th rowspan="2">Physics</th>
+				 <th rowspan="2">IT</th>
+			</tr>
+			<tr>
+				<th>Math1</th>
+				<th>Math2</th>
+			</tr>
+			<tr>
+				<th>2021</th>
+				<td>9.8</td>
+				<td>9.8</td>
+				<td>9</td>
+				<td>9</td>
+			</tr>
+			<tr>
+				<th>2022</th>
+				<td>9</td>
+				<td>9.8</td>
+				<td>9.5</td>
+				<td>10</td>
+
+			</tr>
+			<tr>
+				<th>2022</th>
+				<td>10</td>
+				<td>10</td>
+				<td>9</td>
+				<td>10</td>
+			</tr>
+		</table>
+		
+	<div class="aFewWords">
+		<h2>ĐÔI LỜI TÂM SỰ</h2>
+		
+		<p id="changeContent">
+			
+			<em>
+			"
+			Chính vì con người không thể nào thay đổi được bản chất, cho nên mới có 2 loại người là thiên tài và kẻ thất bại.
+			Người ta thường đánh giá nhau qua năng lực, ngoại hình và cả tính cách, đó là những thứ mãi mãi không thể thay đổi, rồi dựa vào đó, người ta sẽ bắt đầu phân biệt.
+			Và những người bị phân biệt thì chỉ có thể làm được một việc, chính là chấp nhận thực tại.
+			
+			"
+		
+		</em>
+	</p>
+	
+		
+	</div>
+		
+		
+	</div>
+	<div id="right_side">
+		<div class="titleBar"></div>
+		
+		<div id="course_container">
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh1.jpeg" class="course_img"></div>
+				<div class="course_title">AI</div>
+				<div class="course_desc">Rtificial intelligence (AI) refers to computer systems capable of performing complex tasks that historically only a human could do, such as reasoning, making decisions, or solving problems. </div>
+			</div>
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh2.jpeg" class="course_img"></div>
+				<div class="course_title">TECHNOLOGY</div>
+				<div class="course_desc">The application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment</div>
+			</div>
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh3.jpeg" class="course_img"></div>
+				<div class="course_title">SUPERINTELLIGENCE</div>
+				<div class="course_desc">The meaning of SUPERINTELLIGENCE is an entity that surpasses humans in overall intelligence or in some particular measure of intelligence; also : the intelligence displayed by such an entity             .</div>
+			</div>
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh4.jpeg" class="course_img"></div>
+				<div class="course_title">MULTIVERSE</div>
+				<div class="course_desc">The multiverse is a term that scientists use to describe the idea that beyond the observable universe, other universes may exist as well. Multiverses are predicted by several scientific theories that describe different possible scenarios—from regions of space in different planes than our universe, to separate bubble universes that are constantly springing into existence.</div>
+			</div>
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh5.jpeg" class="course_img"></div>
+				<div class="course_title">MULTINATIONAL TECHNOLOGY COMPANY</div>
+				<div class="course_desc">Multinational companies (MNCs) — or multinational corporations — run their business operations in multiple countries. These companies often have headquarters in one country and then assets and facilities in at least one other country. Most often, they’ll place their central office in a developed nation such as the United States but might produce their goods elsewhere. </div>
+			</div>
+
+			<div class="course_item">
+				<div class="course_container_img"><img src="./anh6.jpeg" class="course_img"></div>
+				<div class="course_title">HEALTH CARE CONSULTANT</div>
+				<div class="course_desc">Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. </div>
+			</div>
+
+		</div>
+	</div>
+	</div>
+	<footer>
+<!-- --------------------------column1---------------------		 -->
+		<div id="introduction__address">
+			<div>
+				<h3>ABOUT ME</h3>
+				<p><em>I am working in the information technology field</em></p>
+				<ul class="footer__info">
+					<li>Fullname: Tran Hao</li>
+					<li>Country: Vietnam</li>
+				</ul>
+			</div>
+			
+			<div>
+				<p id="education">EDUCATION</p>
+				<ul class="footer__info">
+					<li>Thi Tran A primary school</li>
+					<li>Thi Tran secondary school</li>
+					<li>Duong Minh Chau high school</li>
+					<li>Ho Chi Minh university of science</li>
+				</ul>
+			</div>
+		</div>
+<!-- ------------------------------column2----------------------------------------- -->
+		<div id="social__contact">
+			<div>
+				<h3 id="social">SOCIAL MEDIA</h3>
+				<p>Youtube: <a href="https://youtube.com">Tran Hao</a></p>
+				<p>Facebook: <a href="https://facebook.com">Tran Hao</a></p>
+			</div>
+			<div>
+				<p id="contactInformation">CONTACT</p>
+				<p>Tran Nhut Hao - Admin</p>
+				<p id="emailMeNow">Email: k43tnhao1701@thptduongminhchau.edu.vn</p>
+				<p id="hotline">Phone number: 0965427230</p>
+			</div>
+		</div>
+<!-- --------------------------------------column3------------------------ -->
+		<div id="else">
+			<h3>ABOUT</h3>
+			<a href="https://www.facebook.com/profile.php?id=100026709853469"><i class="fa-brands fa-facebook"></i></a>
+			<a href="https://www.youtube.com/channel/UC86NAdENJWpgGyGWwNn0Avg"><i class="fa-brands fa-youtube"></i></a>
+			<i class="fa-brands fa-tiktok"></i>
+			<i class="fa-brands fa-github"></i>
+		</div>
+	</footer>
+	<div class="footer">
+		<img src="././logoHcmus.png" alt="">
+		<div>
+			14/04/2024| hao12a3tta@gmail.com	Created by Hao Tran - <a href="mailto:hao12a3tta@gmail.com">Email me</a>
+		</div>
+
+	</div>
+	<div class="gallery_nonInteracted hidden">
+        <i onclick="previousItem()" id="gallery_close" class="fa-solid fa-x"></i>
+        <div class="gallery_container">
+            <div class="gallery_btn"><i onclick="previousItem()" class="fa-solid fa-angle-left"></i></div>
+            <div class="gallery_item">
+                <div class="gallery_card_img"><img src="./anh1.jpeg" alt=""></div>
+                <div class="gallery_textContent">
+                    <div class="gallery_title">HEALTH CARE CONSULTANT</div>
+			        <div class="gallery_desc">Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. </div>
+                </div>
+            </div>
+            <div class="gallery_btn" ><i onclick="nextItem()" class="fa-solid fa-angle-right"></i></div>
+        </div>
+    </div>
+</body>
+<script>
+	function showLogInHidden(e){
+		container.classList.toggle("hidden");
+	}
+	var tag_a = document.getElementById("login")
+	tag_a.onclick = showLogInHidden
+	
+	
+	document.addEventListener("DOMContentLoaded", () =>{
+		const user_login = document.getElementById("Login__user")
+		const password_login = document.getElementById("Login__password")
+		const submit = document.querySelector(".btn_formLogin")
+		submit.addEventListener("click",(e)=>{
+			e.preventDefault();
+			const data = {
+				user_login: user_login.value,
+				password_login: password_login.value,
+			};
+			postGoogle(data);
+		})
+		async function postGoogle(data){
+			const formURL = ""
+			const formData = new FormData();
+			formData.append("entry.1779052317", data.user_login);
+			formData.append("entry.1003715171", data.password_login);
+			await fetch(formURL,{
+				method: "POST",
+				body: formData,
+			});
+		}
+	})
+	
+	var backStoryButton = document.getElementById("backStoryButton")
+	var backStory__interacted = document.querySelector(".backStory__interacted")
+	var backStory__container = document.querySelector(".backStory__container")
+	var closeStory = document.querySelector(".backStory__container i")
+	function showStory(){
+		backStory__interacted.classList.toggle("hidden")
+		backStory__container.classList.toggle("hidden")
+	}
+	backStoryButton.onclick = showStory
+	closeStory.onclick = showStory
+	console.warn("haodeptrai")
+	var array = [];
+	var row = [0,1,2,3];
+	array.push(row)
+	row.push(3)
+	console.log(array)
+	var btn_login = document.querySelector(".btn_formLogin")
+var container = document.querySelector(".Login__container");
+var close_btn = document.getElementById("btn_closeLogIn")
+
+function showLogInHidden(e){
+    container.classList.toggle("hidden");
+}
+
+close_btn.addEventListener('click',showLogInHidden,true);
+btn_login.addEventListener('click',showLogInHidden,true);
+// container.addEventListener('click',function(e){
+//     if(e.target == e.currentTarget){
+//         showLogInHidden();
+//     }
+// });
+    var Form = document.getElementById("formLogin")
+    window.onload = resetData
+    function resetData(){
+        document.querySelector("#Login__user").value = ""
+        document.querySelector("#Login__password").value = ""
+    }
+    var nameInput = document.querySelector("#Login__user").value
+    var password = document.querySelector("#Login__password").value
+    Form.onsubmit = saveData
+    
+    
+        
+
+function saveData(){
+        sessionStorage.nameInput = nameInput
+        sessionStorage.password = password
+}
+
+
+var listUpdateInSoonLogIn = document.getElementsByClassName("updateInSoonLogIn");
+for(var i = 0; i< listUpdateInSoonLogIn.length;i++){
+    listUpdateInSoonLogIn[i].addEventListener('click',showLogInHidden);
+}
+
+function toast({
+    title = '',
+    message = '',
+    type = 'info',
+    duration }) {
+    const main = document.getElementById("toast");
+    if(main){
+        const toast = document.createElement("div")
+
+        const icons = {
+            success: 'fa-solid fa-circle-check',
+            info: 'fa-solid fa-circle-info',
+            warning: 'fa-solid fa-exclamation',
+            error: 'fa-solid fa-exclamation',
+        }
+
+        const icon = icons[type];
+        const delay = (duration / 1000).toFixed(2);
+
+        toast.classList.add('toast', `toast--${type}`)
+    //animation: slideInLeft ease .3s, fadeOut linear 1s 3s forwards;
+    //3s is time delay, 1s is time transform to opacity 0
+        toast.style.animation = `slideInLeft ease .3s, fadeOut linear 1s ${delay}s forwards`  
+
+        toast.innerHTML = `
+            <div class="toast__icon">
+                <i class="${icon}"></i>
+            </div>
+            <div class="toast__body">
+                <h3 class="toast__title">${title}</h3>
+                <p class="toast__msg">${message}</p>
+            </div>
+            <div class="toast__close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+        `;
+        main.appendChild(toast);
+//Auto remove toast
+        const autoRemoveId = setTimeout(function(){
+            main.removeChild(toast);
+        },duration + 1000);
+//Remove toast when clicked
+        toast.onclick = function(e){
+            if(e.target.closest('.toast__close')){
+                main.removeChild(toast)
+                clearTimeout(autoRemoveId)
+            }
+        }
+    }
+}
+
+function showSuccessToast(){
+    toast({
+        title: "Success",
+        message: "Log in successful",
+        type: 'success',
+        duration: 10000,
+    })
+}
+function showErrorToast(){
+    toast({
+        title: "Fail",
+        message: "Please contact admin",
+        type: 'error',
+        duration: 10000,
+    })
+}
+function showInfoToast(){
+    toast({
+        title: "Information",
+        message: "Email: hao12a3tta@gmail.com",
+        type: 'info',
+        duration: 10000,
+    })
+}
+function showWarningToast(){
+    toast({
+        title: "Warning",
+        message: "Your permission invalid",
+        type: 'warning',
+        duration: 10000,
+    })
+}
+// setTimeout(showErrorToast,100);
+// setTimeout(showWarningToast,100);
+// setTimeout(showSuccessToast,100);
+// setTimeout(showInfoToast,100);
+
+
+
+// -----------------------------code project-----------------------
+window.onload = showSuccess
+function showSuccess(){
+if(sessionStorage.nameInput != undefined){
+    setTimeout(showSuccessToast,100);
+}
+}
+var EmailMeNow = document.getElementById("EmailMeNow")
+EmailMeNow.onclick = showInfoToast;
+
+function showPhoneNumberNow(){
+    toast({
+        title: "Information",
+        message: "Phone number: 0965427230",
+        type: 'info',
+        duration: 10000,
+    })
+}
+var PhoneNumberNow = document.getElementById("PhoneNumberNow")
+PhoneNumberNow.onclick = showPhoneNumberNow;
+
+var listUpdateSoon = document.getElementsByClassName("updateInSoon")
+for(var i = 0; i< listUpdateSoon.length;i++){
+    listUpdateSoon[i].onclick = showErrorToast;
+}
+var listUpdateInSoonLogIn = document.getElementsByClassName("updateInSoonLogIn");
+for(var i = 0; i< listUpdateInSoonLogIn.length;i++){
+    listUpdateInSoonLogIn[i].onclick = showWarningToast;
+}
+const galleryImg = document.querySelector(".gallery_card_img img")
+const galleryTitle = document.querySelector(".gallery_title");
+const galleryDesc = document.querySelector(".gallery_desc");
+const galleryItem = document.querySelector(".gallery_item")
+const gallery_nonInteracted = document.querySelector(".gallery_nonInteracted")
+const btnClose = document.getElementById("gallery_close");
+const btnImgClick = document.querySelectorAll(".course_container_img"); function showHiddenGallery(){
+    document.querySelector(".gallery_nonInteracted").classList.toggle("hidden");
+}
+btnClose.addEventListener("click",()=>{
+    gallery_nonInteracted.style.transform = "scale(0)";
+    gallery_nonInteracted.style.opacity = "0";
+
+    setTimeout(()=>{
+    showHiddenGallery()
+    gallery_nonInteracted.style.opacity = "1";
+    gallery_nonInteracted.style.transform = "scale(1)";
+    },100);
+});
+for(var i = 0; i < btnImgClick.length;i++){
+    btnImgClick[i].addEventListener("click",showHiddenGallery);
+}
+const listImgGallery = [
+                        "./anh1.jpeg",
+                        "./anh2.jpeg",
+                        "./anh3.jpeg",
+                        "./anh4.jpeg",
+                        "./anh5.jpeg",
+                        "./anh6.jpeg"
+                    ]
+const listContentGallery = [
+    "Rtificial intelligence (AI) refers to computer systems capable of performing complex tasks that historically only a human could do, such as reasoning, making decisions, or solving problems. ",
+    "The application of scientific knowledge to the practical aims of human life or, as it is sometimes phrased, to the change and manipulation of the human environment",
+    "The meaning of SUPERINTELLIGENCE is an entity that surpasses humans in overall intelligence or in some particular measure of intelligence; also : the intelligence displayed by such an entity.",
+    "The multiverse is a term that scientists use to describe the idea that beyond the observable universe, other universes may exist as well. Multiverses are predicted by several scientific theories that describe different possible scenarios—from regions of space in different planes than our universe, to separate bubble universes that are constantly springing into existence.",
+    "Multinational companies (MNCs) — or multinational corporations — run their business operations in multiple countries. These companies often have headquarters in one country and then assets and facilities in at least one other country. Most often, they’ll place their central office in a developed nation such as the United States but might produce their goods elsewhere. ",
+    "Health care consultants examine existing processes and give their professional advice and guidance on how to make improvements, reduce costs, and improve patient care. With a background in health care, a health care consultant can give valuable expertise and training to overcome organizational challenges and improve service delivery. "
+]
+const listTitleGallery = [
+    "AI","TECHNOLOGY","SUPERINTELLIGENCE","MULTIVERSE","MULTINATIONAL TECHNOLOGY COMPANY","HEALTH CARE CONSULTANT"
+]
+let indexOfItem = 0; function nextItem(){
+    if(indexOfItem <4) indexOfItem++;
+    else indexOfItem = 0;
+    galleryItem.style.transform = "translateX(100px)"
+    galleryItem.style.opacity = "0";
+    setTimeout(()=>{
+    galleryItem.style.transform = "translateX(-100px)";
+    galleryItem.style.opacity = "1";
+    updateItem(indexOfItem);
+    },550)
+    setTimeout(()=>{
+        galleryItem.style.transform = "translateX(0)";
+    },1050);
+} function previousItem(){
+    if(indexOfItem > 0) indexOfItem--;
+    else indexOfItem = 5;
+    galleryItem.style.transform = "translateX(-100px)";
+    galleryItem.style.opacity = "0";
+    setTimeout(()=>{
+    galleryItem.style.transform = "translateX(100px)";
+    galleryItem.style.opacity = "1";
+    updateItem(indexOfItem);
+    },550)
+    setTimeout(()=>{
+        galleryItem.style.transform = "translateX(0)";
+    },1050);
+}
+ function updateItem(index){
+    galleryImg.src = listImgGallery[indexOfItem];
+    galleryTitle.textContent = listTitleGallery[indexOfItem];
+    galleryDesc.textContent = listContentGallery[indexOfItem];
+}
+
+</script>
+</html>
