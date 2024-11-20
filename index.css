@@ -829,7 +829,7 @@ background: rgb(0,106,221);
 }
 .gallery_item{
     width: 47%;
-    margin-top: 15px;
+    margin-top: 8%;
     background: #fff;
 	color: rgba(0, 106, 221, 1);
     transition: .5s;
@@ -853,7 +853,7 @@ background: rgb(0,106,221);
 .gallery_desc{
     margin: 10px;
     text-align: justify;
-    height: 120px;
+    height: 215px;
     display: flex;
     justify-content: center;
     align-items: center;
